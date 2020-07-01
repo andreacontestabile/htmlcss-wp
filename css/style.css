@@ -5,13 +5,38 @@
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   margin: 20px auto 0;
 }
 
-#header {
-  height: 180px;
-  background-color: #fefe3a;
+
+body {
+  background-image: url('../img/natural-bg-pattern.png')
+}
+
+#header-top {
+  position: relative;
+  height: 400px;
+  background-image: url('../img/natural-header-bg.jpg');
+  background-position: center center;
+  border: 10px solid #fff;
+}
+
+#header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#header-title .logo-img {
+  width: 500px;
 }
 
 main {
