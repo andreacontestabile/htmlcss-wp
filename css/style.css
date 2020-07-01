@@ -11,7 +11,8 @@
 
 
 body {
-  background-image: url('../img/natural-bg-pattern.png')
+  background-image: url('../img/natural-bg-pattern.png');
+  font-family: 'Montserrat', sans-serif;
 }
 
 #header-top {
@@ -32,7 +33,6 @@ body {
 
 #header-title, #main-nav a {
   color: #fff;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -83,23 +83,60 @@ main::after {
 
 .sidebar, .widget-area {
   float: left;
-  width: 25%;
+  width: 22%;
 }
 
-.sidebar {
-min-height: 65%;
+.sidebar, .main-content, .widget {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
-.sidebar, .widget {
-  background-color: #cc87da;
+.sidebar h2, .main-content h2, .widget h2 {
+  color: #665e5e;
+}
+
+.sidebar-header .fa-rss-square {
+  font-size: 30px;
+  color: orange;
+  margin-right: 10px;
+}
+
+.sidebar-header h2 {
+}
+
+.sidebar-header .fa-rss-square, .sidebar-header h2 {
+  float: left;
+}
+
+.sidebar-header {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 15px;
+}
+
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.sidebar a {
+  color: green;
+  font-weight: 600;
+  text-transform:capitalize;
+  text-decoration: none;
 }
 
 .main-content {
   float: left;
-  margin: 0 1.5%;
-  width: 47%;
+  margin: 0 3%;
+  width: 50%;
   height: 100%;
-  background-color: #730671;
 }
 
 .widget-area {
