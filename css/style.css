@@ -71,7 +71,6 @@ body {
 }
 
 main {
-  height: 650px;
   margin: 10px 0;
 }
 
@@ -86,17 +85,18 @@ main::after {
   width: 22%;
 }
 
-.sidebar, .widget {
-  padding: 10px;
-}
-
 .sidebar, .main-content, .widget {
+  padding: 25px;
   border-radius: 10px;
   background-color: #fff;
 }
 
 .sidebar h2, .main-content h2, .widget h2 {
   color: #2b2323;
+}
+
+.sidebar h2 {
+  width: 100px
 }
 
 .sidebar-header .fa-rss-square {
@@ -135,7 +135,6 @@ main::after {
 .main-content {
   float: left;
   margin: 0 3%;
-  padding: 20px;
   width: 50%;
 }
 
@@ -150,16 +149,20 @@ main::after {
   line-height: 2;
 }
 
-.widget-area {
-  height: 100%;
-}
-
 .widget {
-  height: 47%;
+  padding: 20px;
 }
 
-.widget:first-child {
-  margin-bottom: 6%
+.widget:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.widget-content {
+  line-height: 1.8;
+}
+
+.widget-title {
+  margin-bottom: 20px;
 }
 
 #footer {
