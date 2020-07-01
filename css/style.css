@@ -86,23 +86,23 @@ main::after {
   width: 22%;
 }
 
-.sidebar, .main-content, .widget {
+.sidebar, .widget {
   padding: 10px;
+}
+
+.sidebar, .main-content, .widget {
   border-radius: 10px;
   background-color: #fff;
 }
 
 .sidebar h2, .main-content h2, .widget h2 {
-  color: #665e5e;
+  color: #2b2323;
 }
 
 .sidebar-header .fa-rss-square {
   font-size: 30px;
   color: orange;
   margin-right: 10px;
-}
-
-.sidebar-header h2 {
 }
 
 .sidebar-header .fa-rss-square, .sidebar-header h2 {
@@ -116,7 +116,6 @@ main::after {
   margin-bottom: 15px;
 }
 
-
 .sidebar ul {
   list-style: none;
 }
@@ -128,6 +127,7 @@ main::after {
 .sidebar a {
   color: green;
   font-weight: 600;
+  line-height: 1.5;
   text-transform:capitalize;
   text-decoration: none;
 }
@@ -135,8 +135,19 @@ main::after {
 .main-content {
   float: left;
   margin: 0 3%;
+  padding: 20px;
   width: 50%;
-  height: 100%;
+}
+
+.article-title {
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.4);
+}
+
+.article-content {
+  font-weight: bold;
+  line-height: 2;
 }
 
 .widget-area {
