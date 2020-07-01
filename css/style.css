@@ -71,7 +71,7 @@ body {
 }
 
 main {
-  margin: 10px 0;
+  margin: 10px 0 30px;
 }
 
 main::after {
@@ -110,10 +110,13 @@ main::after {
 }
 
 .sidebar-header {
+  margin-bottom: 15px;
+}
+
+.sidebar-header::after {
   content: "";
   display: table;
   clear: both;
-  margin-bottom: 15px;
 }
 
 .sidebar ul {
@@ -145,7 +148,6 @@ main::after {
 }
 
 .article-content {
-  font-weight: bold;
   line-height: 2;
 }
 
@@ -166,6 +168,33 @@ main::after {
 }
 
 #footer {
-  height: 80px;
-  background-color: #a4d2e1
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
+  font-style: italic;
+  color: #b3aaaa;
+}
+
+.copyright {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #b3aaaa;
+}
+
+.footer-social {
+  width: 100%;
+  font-size: 50px;
+}
+
+.footer-social::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer-social-column {
+  float: left;
+  width: 33.33%;
+  padding: 30px
 }
