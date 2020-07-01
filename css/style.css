@@ -27,16 +27,47 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
   font-size: 24px;
+}
+
+#header-title, #main-nav a {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
 }
 
 #header-title .logo-img {
   width: 500px;
+}
+
+#main-nav {
+  height: 50px;
+  background-color: #665e5e;
+  text-align: center;
+}
+
+#main-nav .menu-list {
+  list-style: none;
+  font-size: 0;
+}
+
+#main-nav .menu-list-item, #main-nav a {
+  display: inline-block;
+  line-height: 50px;
+}
+
+#main-nav a {
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0 16px;
+  transition: background-color 0.4s;
+}
+
+#main-nav a:hover {
+  background-color: #2b2323;
+  transition: background-color 0.4s;
 }
 
 main {
@@ -72,7 +103,7 @@ min-height: 65%;
 }
 
 .widget-area {
-  height: 99%;
+  height: 100%;
 }
 
 .widget {
